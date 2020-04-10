@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+:root {  
+--red: hsl(0, 100%, 74%); 
+--green: hsl(154, 59%, 51%);
+
+--blue: hsl(248, 32%, 49%);
+
+--dark-blue: hsl(249, 10%, 26%); 
+--grayish-blue: hsl(246, 25%, 77%);
+
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    background-image: url('/images/bg-intro-mobile.png');
+    background-color: var(--red);
+    padding: 25px;
+    color: #fff;
+    line-height: 1.7rem;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
+#container h2 {
+    font-weight: 700;
+    font-size: 26px;
+    margin: 10px 0;
+    line-height: 2rem;
+}
+
+@media screen and (min-width: 1200px){
+    #container {
+        display: flex;
+        flex-flow: column;
+        /* padding: 140px 40px; */
+
+    }
+
+    .form-content {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content:space-around;
+        padding: 50px 100px;
+    }
+
+    .content {
+        width: 80vw;
+    }
+    
+    .form-content #learn {
+        text-align: left;
+        padding-left: 130px;
+        margin-right: 100px;
+    }
+
+    .form-content #learn h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 3rem;
+    }
+}
+
+.content a {
+    background-color: var(--blue);
+    padding: 20px 70px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin: 40px 0 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px var(--dark-blue);
+}
+
+#learn {
+    text-align: center;
+}
+
+.form-content #try {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.content form {
+    width: 100vw;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px var(--dark-blue);
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.content form .form-control:first-child {
+    padding-top: 20px;
+}
+
+/* .content form .form-control {
+    padding: 0 20px;
+} */
+
+
+.content form, input, button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    color: var(--dark-blue);
+}
+
+
+.content form input {
+    color: var(--grayish-blue);
+    font-weight: 600;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form input[type="password"] {
+    font-size: 16px;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.content form input:focus {
+    outline: 0;
+    border-color: var(--dark-blue);
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: var(--red);
+}
+
+.form-control small {
+    color: var(--red);
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.content form button {
+    color: #fff;
+    padding: 20px 40px;
+    background-color: var(--green);
+    font-weight: 700;
+    box-shadow: 1px 1px 5px var(--green);
+}
+
+#terms {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+#service {
+    color: var(--red);
+}
+
+
